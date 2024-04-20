@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+  margin: 0;
+  overflow: hidden;
+  cursor: crosshair;
+  background-image: url('assets/space.jpg');
+  background-size: cover;
+  font-family: 'Press Start 2P', system-ui;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 6rem;
+}
+
+canvas {
+  display: block;
+}
+
+#countdown {
+  font-size: 1.8rem;
+  color: rgb(98, 222, 222);
+  position: absolute;
+  top: 12%;
+  left: 6%;
+  z-index: 1;
+}
+
+#finalText {
+  font-size: 4rem;
+  color: lightblue;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+#restartButton {
+  font-size: 4rem;
+  color: teal;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  border-radius: 4rem;
+  padding: 1rem 4rem;
+  background-color: lightblue;
+  display: none;
+}
+
+#restartButton:hover {
+  cursor: pointer;
+}
+
+#boton-reset {
+  color: #444;
+  font-size: 1.5rem;
+}
+
+#boton-jugar {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.1rem;
+}
+
+.retro-red {
+  background: #881400;
+}
+
+.retro-red:hover {
+  background: #a81000;
+}
+
+.retro-green {
+  background: #005800;
+}
+
+.retro-green:hover {
+  background: #006800;
+}
+
+.retro-blue {
+  background: #0000bc;
+}
+
+.retro-blue:hover {
+  background: #0000fc;
+}
+
+#final-text{
+  text-align: center;
+}
+
+.retro-button {
+  border-bottom: 0.6rem inset rgba(0, 0, 0, 0.5);
+  border-left: 0.6rem inset rgba(0, 0, 0, 0.5);
+  border-right: 0.6rem inset rgba(255, 255, 255, 0.5);
+  border-top: 0.6rem inset rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.5rem;
+  padding: 1rem;
+  text-transform: uppercase;
+  min-width: 400px;
+}
+
+#controles {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  gap: 5rem;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+}
+
+#game-logo {
+  position: absolute;
+  width: 35%;
+  top: 18%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#dificultades {
+  display: flex;
+  gap: 4rem;
+}
