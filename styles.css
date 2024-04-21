@@ -26,20 +26,21 @@ canvas {
 }
 
 #finalText {
-  font-size: 4rem;
+  font-size: 3.2rem;
   color: lightblue;
   position: absolute;
   top: 20%;
   left: 50%;
   transform: translateX(-50%);
+  text-align: center;
   z-index: 1;
 }
 
 #restartButton {
-  font-size: 4rem;
+  font-size: 3rem;
   color: teal;
   position: absolute;
-  top: 70%;
+  top: 80%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
@@ -47,6 +48,11 @@ canvas {
   padding: 1rem 4rem;
   background-color: lightblue;
   display: none;
+}
+
+#countdown {
+  visibility: hidden;
+  font-size: 2rem;
 }
 
 #restartButton:hover {
@@ -90,7 +96,7 @@ canvas {
   background: #0000fc;
 }
 
-#final-text{
+#final-text {
   text-align: center;
 }
 
