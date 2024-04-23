@@ -214,7 +214,7 @@ function startGame() {
     leaderboardArray = leaderboardArray.slice(0, 3)
 
     // Crear el texto que se mostrará en la pantalla
-    let leaderboardText = `${score} PTS.<br>TOP 3 (${dificultad})<br>`
+    let leaderboardText = `${score} PTS.<br><br>TOP 3 (${dificultad})<br>`
     leaderboardArray.forEach((player, index) => {
       leaderboardText += `${index + 1}. <b>${player[0]}:</b> ${player[1]}<br>`
     })

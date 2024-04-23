@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
+*{
+  cursor: url('/assets/crosshair.svg') 40 40, auto;
+}
+
 body {
   margin: 0;
   overflow: hidden;
-  cursor: crosshair;
   background-image: url('assets/space.jpg');
   background-size: cover;
   font-family: 'Press Start 2P', system-ui;
@@ -25,11 +28,23 @@ canvas {
   z-index: 1;
 }
 
+#instrucciones {
+  color: white;
+  font-size: 1.8rem;
+  width: 100%;
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  line-height: 3.5rem;
+  text-align: center;
+}
+
 #finalText {
   font-size: 3.2rem;
   color: lightblue;
   position: absolute;
-  top: 20%;
+  top: 15%;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -45,7 +60,7 @@ canvas {
   transform: translateX(-50%);
   z-index: 1;
   border-radius: 4rem;
-  padding: 1rem 4rem;
+  padding: 0.7rem 3rem;
   background-color: lightblue;
   display: none;
 }
@@ -55,10 +70,6 @@ canvas {
   font-size: 2rem;
 }
 
-#restartButton:hover {
-  cursor: pointer;
-}
-
 #boton-reset {
   color: #444;
   font-size: 1.5rem;
@@ -66,10 +77,10 @@ canvas {
 
 #boton-jugar {
   position: absolute;
-  top: 60%;
+  top: 70%;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .retro-red {
@@ -96,10 +107,6 @@ canvas {
   background: #0000fc;
 }
 
-#final-text {
-  text-align: center;
-}
-
 .retro-button {
   border-bottom: 0.6rem inset rgba(0, 0, 0, 0.5);
   border-left: 0.6rem inset rgba(0, 0, 0, 0.5);
@@ -107,12 +114,11 @@ canvas {
   border-top: 0.6rem inset rgba(255, 255, 255, 0.5);
   box-sizing: border-box;
   color: white;
-  cursor: pointer;
   display: inline-block;
   font-size: 1.5rem;
   padding: 1rem;
   text-transform: uppercase;
-  min-width: 400px;
+  min-width: 350px;
 }
 
 #controles {
@@ -132,7 +138,7 @@ canvas {
 
 #game-logo {
   position: absolute;
-  width: 35%;
+  width: 25%;
   top: 18%;
   left: 50%;
   transform: translateX(-50%);
