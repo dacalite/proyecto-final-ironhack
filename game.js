@@ -1,10 +1,21 @@
 // Cuando se cargan todos los elementos del DOM empezamos el juego
 window.addEventListener('load', cuentaAtras)
 
+function preloadImages() {
+  const spaceshipImage = new Image()
+  spaceshipImage.src = '/assets/alien.png'
+
+  const explosionImage = new Image()
+  explosionImage.src = '/assets/explosion.png'
+}
+
 // Función que muestra la cuenta atrás para empezar el juego
 function cuentaAtras() {
   // Obtenemos el elemento del DOM
   const finalTextElement = document.getElementById('finalText')
+
+  //Vamos precargando las imágenes que necesitamos luego
+  preloadImages()
 
   //Empezamos la cuenta atrás
   finalTextElement.innerText = 'Preparados...'
@@ -115,7 +126,7 @@ function startGame() {
       // Dibujamos la imagen en el contexto 2D del canvas
       ctx.drawImage(spaceshipImage, x, y, width, height)
     }
-    spaceshipImage.src = 'assets/alien.png'
+    spaceshipImage.src = '/assets/alien.png'
   }
 
   // Función para dibujar una explosión encima del alien cuando este muere
@@ -133,7 +144,7 @@ function startGame() {
       // Dibujamos la imagen en el canvas
       ctx.drawImage(explosionImage, x, y, width, height)
     }
-    explosionImage.src = 'assets/explosion.png'
+    explosionImage.src = '/assets/explosion.png'
   }
 
   // Función que genera un alien aleatorio en el canvas
